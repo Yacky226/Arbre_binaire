@@ -7,13 +7,10 @@ int main() {
     std::vector<int> v;
     MinHeap<int> heap;
 
-    for (int i = 0; i < 10; i++)  v.push_back(rand() % 100);
+    for (int i = 0; i < 100000000; i++)  v.push_back(rand() % 100);
 
     for (auto it = v.begin(); it != v.end(); it++) heap.insert(*it);
-                                            
-
-    
-
+                                           
     std::cout << "Tas min :\n";
     heap.print();
 
